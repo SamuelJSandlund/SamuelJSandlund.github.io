@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samuel Sandlund</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <script>
+        window.addEventListener('scroll', function(e){
+            const target1 = document.querySelector(".coverImage");
+            const target2 = document.querySelector(".greeting");
+            var scrolled = window.pageYOffset;
+            let rate = scrolled * 0.3;
+            target1.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
+            target2.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
+        });
+    </script>
+    <div class="navContainer">
+        <header>
+            <a href="#scrollToTop" class="logo">Samuel Sandlund</a>
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#scrollToFeatured">My work</a>
+                    </li>
+                    <li>
+                        <a href="#scrollToAbout">About</a>
+                    </li>
+                    <li>
+                        <a href="#scrollToContact">Get in touch</a>
+                    </li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <div id="scrollToTop"></div>
+    <div class="hero">
+        <div class="coverImage">
+            <img src="media/hero_image.png" alt="Samuel Sandlund">
+        </div>
+        <div class="greeting">
+            <h1>Hi there!</h1>
+            <p>My name is Samuel. I'm a student, UX designer and developer.</p>
+            <br>
+            <a href="#scrollToFeatured"><button class="btn_dark">See my work</button></a>
+        </div>
+    </div>
+
+    <div id="scrollToFeatured"></div>
+    <section class="featuredProjects" id="featured">
+        <h2>Featured projects</h2>
+        <div class="projectsContainer">
+            <a href="ledigajobb.html">
+                <div class="projectCard" id="ledigajobb">
+                    <img class="ledigajobb_logo" src="media/ledigajobb_logo.svg" alt="ledigajobb.se">
+                    <img class="ledigajobb_mockup1" src="media/ledigajobb_mockup1.png" alt="">
+                    <img class="ledigajobb_mockup2" src="media/ledigajobb_mockup2.png" alt="">
+                    <img class="noor_logo" src="media/noor_logo.svg" alt="Noor">
+                </div>
+            </a>
+            <a href="vbo.html">
+                <div class="projectCard" id="vasterbottensost">
+                    <img class="vvbo_logo" src="media/vvbo_logo.svg" alt="Världens Västerbottensost(R)">
+                    <img class="vbo_mockups" src="media/vbo_mockups.png" alt="">
+                    <img class="VBO_logo_primary" src="media/VBO_logo_primary.svg" alt="Västerbottensost">
+                </div>
+            </a>
+            <a href="scanandgo.html">
+                <div class="projectCard" id = "scanAndGo">
+                    <img class="scanandgo_logo" src="media/scanandgo_logo.svg" alt="Scan & GO!">
+                    <img class="scanandgo_mockups" src="media/scanandgo_mockups.png" alt="">
+                </div>
+            </a>
+            <a href="umub.html">
+                <div class="projectCard" id="UMUB">
+                    <img class="UMUB_logo" src="media/UMU-Book.svg" alt="UMU-Book">
+                    <img class="UMUB_mockup" src="media/umubook/feed.png" alt="">
+                </div>
+            </a>
+        </div>
+    </section>
+    
+    <div class="scrollpoint" id="scrollToAbout"></div>
+    <section class="aboutMe">
+        <h2>About me</h2>
+        <div class="bio">
+            <img class="profile_image" src="media/Me.jpg" alt="Samuel">
+            <div class="textcontainer">
+                <p>
+                    Being a tech-interested person who has long dabbled in various creative pursuits, the field of software engineering is where I have truly found the best of both worlds, being able to combine both of my passions in service of others. 
+                </p>
+                <p>
+                    I am currently pursuing a M.Sc. in Engineering with a specialization in Interaction Technology and Design at Umeå University. During my studies I have had the privilege to get a lot of hands on experience by working together with great companies, designing systems to solve real problems and learning a lot in the process. 
+                </p>
+            </div>
+            <br>
+        </div>
+    </section>
+
+    <div id="scrollToContact"></div>
+    <section class="contactMe" id="contact">
+        <div class="textholder">
+            <h2>Let's work together!</h2>
+            <p>Send me a message through the form below. Or hit me up on social media, the links are right there in the footer!</p>
+        </div>
+        <form action="https://formsubmit.co/c86cbda038a9f2a822d186a1032ceb2e" method="POST">
+            <div class="contactinfo">
+                <input class="inputfield" type="text" name="name" placeholder="Name" required>
+                <input type="email" name="email" placeholder="Email" required>
+            </div>
+            <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <div class="buttonholder">
+                <button class="btn_dark" type="submit">Send</button>
+            </div>
+        </form>
+    </section>
+    <footer>
+        <div class="left">
+            <a href="https://www.facebook.com/SandlundSamuel"><img class="smIcon" src="media/facebook.svg" alt=""></a>
+            <a href="https://www.linkedin.com/in/samuel-sandlund-37107923b/"><img class="smIcon" src="media/linkedin.svg" alt=""></a>
+        </div>
+        <div class="mid">
+            <p><b>Samuel Sandlund | 2022</b></p>
+        </div>
+        <div class="right">
+            <p><a href="#scrollToTop"><b>From the top!</b></a></p>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,602 @@
+//imports
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@300;400;700&display=swap');
+
+//bases
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: 100vh;
+    margin: 0;
+    font-family:'Noto Sans', arial, helvetica;
+    background-color: #F7CCAC;
+}
+
+section{
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.25);
+}
+
+textarea{
+    resize: none;
+}
+
+ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a{
+    text-decoration: none;
+}
+
+img{
+    width: 100%;
+}
+
+h1, h2{
+    font-weight: 300;
+    text-align: center;
+    text-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+}
+
+h1{
+    font-size: 75px;
+    margin-bottom: 1rem;
+}
+
+h2{
+    font-size: 48px;
+    padding-top: 50px;
+    margin-top: 0;
+}
+
+button{
+    font-weight: 700;
+    padding: 1em 1.5em;
+    border-radius: 5px;
+    min-width: 100px;
+    transition-duration: 0.1s;
+    border:none;
+    box-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+}
+
+//scrollbar
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background: #22252E;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #C69B7B;
+}
+
+//general
+.smIcon{
+    width: 2.5em;
+    filter: invert(99%) sepia(2%) saturate(643%) hue-rotate(345deg) brightness(99%) contrast(96%);
+}
+
+.btn_dark{
+    background-color: #3A3845;
+    color:#F8F6EF;
+}
+
+.btn_dark:hover{
+    background-color: #826F66;
+    color: #F7CCAC;
+    cursor: pointer;
+    box-shadow: none;
+}
+
+//navbar
+.navContainer{
+    display:block;
+    z-index: 10;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #3A3845;
+    padding: 1em;
+    opacity: 100%;
+}
+
+header{
+    position: sticky;
+    width: 100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul{
+    display: flex;
+    a{
+        margin-right: 2em;
+        color:#F8F6EF;
+        align-self: center;
+        font-size: 14px;
+        display:block;
+        padding: 0 1em;
+    }
+    a:hover{
+        color:#F7CCAC;
+    }
+}
+
+.logo{
+    font-weight: 700;
+}
+
+.navContainer{
+    background-color: #22252E;
+    a{
+        color: #F8F6EF;
+    }
+}
+
+//hero
+.hero{
+    position: relative;
+    display:grid;
+    align-content: center;
+    min-height: 95vh;
+    background-color: #F7CCAC;
+    color: #3A3845;
+    //background-color: #FCFCFC;
+    text-align: center;
+    p{
+        margin:auto;
+        width: 270px;
+        text-shadow: 0px 2px 5px rgba(0,0,0,0.25);
+    }
+}
+
+.coverImage{
+    display: block;
+    margin:auto;
+    margin-top: 3em;
+    max-width: 500px;
+    padding:20px;
+    -webkit-filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.25));
+    filter: drop-shadow(0px 2px 5px rgba(0,0,0,0.25));
+}
+
+.greeting{
+    margin-bottom: 3em;
+}
+
+//featured
+
+.featuredProjects{
+    position: relative;
+    text-align: center;
+    background-color: #C69B7B;
+    color:#3A3845;
+    padding-bottom: 1em;
+}
+
+.projectsContainer{
+    position: relative;
+    display: grid;
+    grid-template-columns: 100%;
+    row-gap: 5em;
+    justify-content: center;
+    margin-bottom: 2em;
+}
+
+.projectCard{
+    position:relative;
+    margin:auto;
+    width: 75vw;
+    cursor: pointer;
+    aspect-ratio: 3/2;
+    display:flex;
+    overflow: hidden;
+    max-height: 40vh;
+    background-color: #F7CCAC;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0,0,0,0.25);
+}
+
+
+
+#ledigajobb{
+    .ledigajobb_logo{
+        position: absolute;
+        width: 60%;
+        top: 20%;
+        left: 5%;
+    }
+    .ledigajobb_mockup1{
+        position: absolute;
+        width: 60%;
+        bottom: 35%;
+        right: -22%;
+    }
+    .ledigajobb_mockup2{
+        position: absolute;
+        width: 60%;
+        bottom: 2%;
+        right: 5%;
+    }
+    .noor_logo{
+        position: absolute;
+        width: 20%;
+        bottom: 5%;
+        left: 5%;
+    }
+}
+
+#vasterbottensost{
+    .vbo_mockups{
+        position: absolute;
+        width: 80%;
+        left: 35%;
+        bottom: 12%;
+    }
+    .vvbo_logo{
+        position: absolute;
+        width: 60%;
+        top: 32%;
+        left: 5%;
+    }
+    .VBO_logo_primary{
+        position: absolute;
+        width: 20%;
+        bottom: 5%;
+        left: 5%;
+    }
+}
+
+#scanAndGo{
+    .scanandgo_mockups{
+        width: 100%;
+        position: absolute;
+        top:10%;
+        right: 30%;
+    }
+    .scanandgo_logo{
+        width: 40%;
+        position: absolute;
+        top: 15%;
+        right: 15%;
+    }
+}
+
+#UMUB{
+    .UMUB_logo{
+        position: absolute;
+        max-width: 50%;
+        top:30%;
+        left: 5%;
+        z-index: 2;
+    }
+    .UMUB_mockup{
+        position: absolute;
+        width: 80%;
+        left: 40%;
+        top: 15%;
+    }
+}
+
+//about me
+
+.aboutMe{
+    background-color: #826F66;
+    color: #F8F6EF;
+}
+
+.bio{
+    display: grid;
+    align-content: center;
+    max-width: 75vw;
+    margin:auto;
+    p{
+        text-shadow: 0px 2px 5px rgba(0,0,0,0.25)
+    }
+}
+
+.profile_image{
+    max-width: 300px;
+    margin: auto;
+    border-radius: 500px;
+}
+
+//contact
+
+.textholder{
+    margin:auto;
+    max-width: 75vw;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+.contactMe{
+    background-color: #F7CCAC;
+    color: #3A3845;
+    padding-bottom: 3em;
+    form{
+        width: 75vw;
+        margin: auto;
+    }
+    input, textarea{
+        display: flex;
+        font-family: 'Noto Sans', arial, helvetica;
+        font-size: 16px;
+        font-weight: 700;
+        color:#3A3845;
+        background-color: #F7CCAC;
+        border: 4px solid #3A3845;
+        padding:0.5em;
+        border-radius: 5px;
+        margin:auto;
+        margin-top: 1em;
+        width: 100%;
+    }
+    textarea{
+        margin-bottom: 1em;
+    }
+}
+
+.contacinfo{
+    display: flex;
+}
+
+.buttonholder{
+    display:flex;
+    justify-content: center;
+}
+
+//footer
+footer{
+    a{
+        color: #F8F6EF;
+        text-decoration: underline;
+        margin-right: 10px;
+    }
+    padding:1em;
+    justify-content: space-between;
+    color:#F8F6EF;
+    display: flex;
+    background-color: #22252E;
+    margin: 0;
+
+    .left{
+        display:flex;
+        align-items: center;
+    }
+}
+
+.project_hero{
+    position: relative;
+    display: grid;
+    justify-content: center;
+    margin-top: 10vh;
+    text-align: center;
+    padding-bottom: 3em;
+    color:#3A3845;
+    h1{
+        font-size: 40px;
+        margin-bottom: 40px;
+
+    }
+    img{
+        max-width: 80%;
+        margin:auto;
+        margin-bottom: 40px;
+    }
+    p{
+        max-width: 80%;
+        margin:auto;
+    }
+}
+
+.gallery{
+    display: grid;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color:#F8F6EF;
+    .row{
+        display: grid;
+    }
+    .linkHolder{
+        display:flex;
+        flex-direction: column;
+    }
+    .projectLinks{
+        display:grid;
+    }
+    img{
+        margin:auto;
+        margin-bottom: 2em;
+        max-width: 75vw;
+    }
+    p{
+        max-width: 75%;
+        margin:auto;
+        margin-bottom: 2em;
+    }
+    a{
+        margin:auto;
+    }
+    h2{
+        padding-top: 0px;
+        max-width: 75vw;
+        margin:auto;
+        padding-bottom: 1em;
+        font-size: 36px;
+    }
+    background-color: #826F66;
+    min-height: 100px;
+    .figmaLink{
+        filter: invert(67%) sepia(41%) saturate(318%) hue-rotate(343deg) brightness(90%) contrast(85%);
+        max-width: 200px;
+    }
+    .logoLink{
+        max-width: 60vw;
+    }
+}
+
+.mypart{
+    display: grid;
+    background-color: #C69B7B;
+    padding-top: 3em;
+    padding-bottom: 3em;
+    color:#3A3845;
+    h2{
+        margin:auto;
+        padding-top: 0px;
+        max-width: 75vw;
+        padding-bottom: 1em;
+    }
+    ul{
+        margin:auto;
+        max-width: 75vw;
+        display: block;
+        list-style-type: circle;
+        font-size: 24px;
+        margin:auto;
+        padding-bottom: 1em;
+    }
+    .backButton{
+        margin-top: 2em;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+#vboimage{
+    max-width: 400px;
+}
+
+
+@media only screen and (min-width: 1200px){
+
+    .coverImage{
+        position:absolute;
+        left: 45%;
+        bottom: 20%;
+    }
+
+    .greeting{
+        position: absolute;
+        left: 32%;
+        bottom: 32%;
+        margin:0;
+    }
+
+    .projectsContainer{
+        margin:auto;
+        max-width: 75vw;
+        display: grid;
+        grid-template-columns: auto auto;
+        row-gap: 50px;
+        column-gap: 50px;
+        justify-items: start;
+        align-items: start;
+    }
+
+    .projectCard{
+        max-width: 500px;
+        margin: 0px;
+        aspect-ratio: 3/2;
+    }
+
+    .featuredProjects{
+        padding-bottom: 5em;
+    }
+
+    .contactMe{
+        form{
+            max-width: 50%;
+        }
+    }
+
+    .aboutMe{
+        padding-bottom: 4em;
+    }
+
+    .bio{
+        display: grid;
+        max-width: 60%;
+        grid-template-columns: 40% auto;
+        grid-template-areas: "a b";
+        column-gap: 50px;
+        justify-content: center;
+        justify-items: center;
+        align-items: center;
+    }
+
+    .profile_image{
+        grid-area: b;
+        border-radius: 5px;
+    }
+
+    
+    #umubook{
+        column-gap: 100px;
+    }
+
+    .project_hero{
+        .content{
+            margin:auto;
+            text-align: start;
+            display: grid;
+            grid-template-columns: 50% auto;
+            align-items: center;
+            grid-template-areas: "a b";
+            img{
+                grid-area: b;
+                margin-bottom: 0px;
+                margin-left: 0px;
+            }
+            p{
+                margin-left: 50%;
+            }
+        }        
+    }
+
+    #vboimage{
+        max-width: 400px;
+        margin-left: 100px;
+    }
+
+    .gallery{
+        .row{
+            margin:auto;
+            max-width: 75%;
+            display: grid;
+            grid-template-columns: 60% auto;
+            padding-bottom: 3em;
+            justify-content: center;
+            text-align: start;
+            align-items: center;
+            p{
+                margin-top: 0px;
+            }
+        }
+        .projectLinks{
+            margin:auto;
+            max-width: 75%;
+            display:grid;
+            grid-template-columns: auto auto;
+            column-gap: 100px;
+        }
+        .linkHolder{
+            h2{
+                margin: 0px;
+            }
+            display:flex;
+            img{
+                margin:auto;
+            }
+
+        }
+    }
+}
