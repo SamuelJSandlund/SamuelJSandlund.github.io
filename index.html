@@ -2,132 +2,212 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Sandlund</title>
-    <link rel="stylesheet" href="css/main.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="mainStyle.css">
 </head>
+
 <body>
-    <script>
-        window.addEventListener('scroll', function(e){
-            const target1 = document.querySelector(".coverImage");
-            const target2 = document.querySelector(".greeting");
-            var scrolled = window.pageYOffset;
-            let rate = scrolled * 0.3;
-            target1.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-            target2.style.transform = 'translate3d(0px, '+rate+'px, 0px)';
-        });
-    </script>
-    <div class="navContainer">
-        <header>
-            <a href="#scrollToTop" class="logo">Samuel Sandlund</a>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="#scrollToFeatured">My work</a>
-                    </li>
-                    <li>
-                        <a href="#scrollToAbout">About</a>
-                    </li>
-                    <li>
-                        <a href="#scrollToContact">Get in touch</a>
-                    </li>
-                </ul>
-            </nav>
-        </header>
-    </div>
-    <div id="scrollToTop"></div>
-    <div class="hero">
-        <div class="coverImage">
-            <img src="media/hero_image.png" alt="Samuel Sandlund">
-        </div>
-        <div class="greeting">
-            <h1>Hi there!</h1>
-            <p>My name is Samuel. I'm a student, UX designer and developer.</p>
-            <br>
-            <a href="#scrollToFeatured"><button class="btn_dark">See my work</button></a>
-        </div>
-    </div>
-
-    <div id="scrollToFeatured"></div>
-    <section class="featuredProjects" id="featured">
-        <h2>Featured projects</h2>
-        <div class="projectsContainer">
-            <a href="ledigajobb.html">
-                <div class="projectCard" id="ledigajobb">
-                    <img class="ledigajobb_logo" src="media/ledigajobb_logo.svg" alt="ledigajobb.se">
-                    <img class="ledigajobb_mockup1" src="media/ledigajobb_mockup1.png" alt="">
-                    <img class="ledigajobb_mockup2" src="media/ledigajobb_mockup2.png" alt="">
-                    <img class="noor_logo" src="media/noor_logo.svg" alt="Noor">
-                </div>
-            </a>
-            <a href="vbo.html">
-                <div class="projectCard" id="vasterbottensost">
-                    <img class="vvbo_logo" src="media/vvbo_logo.svg" alt="Världens Västerbottensost(R)">
-                    <img class="vbo_mockups" src="media/vbo_mockups.png" alt="">
-                    <img class="VBO_logo_primary" src="media/VBO_logo_primary.svg" alt="Västerbottensost">
-                </div>
-            </a>
-            <a href="scanandgo.html">
-                <div class="projectCard" id = "scanAndGo">
-                    <img class="scanandgo_logo" src="media/scanandgo_logo.svg" alt="Scan & GO!">
-                    <img class="scanandgo_mockups" src="media/scanandgo_mockups.png" alt="">
-                </div>
-            </a>
-            <a href="umub.html">
-                <div class="projectCard" id="UMUB">
-                    <img class="UMUB_logo" src="media/UMU-Book.svg" alt="UMU-Book">
-                    <img class="UMUB_mockup" src="media/umubook/feed.png" alt="">
-                </div>
-            </a>
-        </div>
-    </section>
+    <header>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><h5 id="logoText">Samuel Sandlund</h5></a>
+            </div>
+            <div>
+                
+            </div>
+            <ul class="links">
+                <li id="myWork"><a href="">my work</a></li>
+                <li id="bio"><a href="">bio</a></li>
+                <li><a id="contactButton" href="mailto: samuel.j.sandlund@gmail.com"><button class="contactButton">contact</button></a></li>
+            </ul>
+        </nav>
+    </header>
     
-    <div class="scrollpoint" id="scrollToAbout"></div>
-    <section class="aboutMe">
-        <h2>About me</h2>
-        <div class="bio">
-            <img class="profile_image" src="media/Me.jpg" alt="Samuel">
-            <div class="textcontainer">
-                <p>
-                    Being a tech-interested person who has long dabbled in various creative pursuits, the field of software engineering is where I have truly found the best of both worlds, being able to combine both of my passions in service of others. 
-                </p>
-                <p>
-                    I am currently pursuing a M.Sc. in Engineering with a specialization in Interaction Technology and Design at Umeå University. During my studies I have had the privilege to get a lot of hands on experience by working together with great companies, designing systems to solve real problems and learning a lot in the process. 
-                </p>
+    <main>
+        <section class="hero">
+            <div id="title">
+                <h1>Hi, I am Samuel...</h1>
+                <div class="headerTextBox">
+                    <p>... and I have a passion for making technology more fun and easy to use for everyone. <br>
+                        This portfolio will show you some of the things I have created while studying at the Master of Sience programme in Interaction Technology and Design.</p>
+                </div>  
             </div>
-            <br>
-        </div>
-    </section>
+        </section>
+        
+        <section class="projects">
+            <div class="gallery">
+                <div class="projectContainer" id="doggofriend">
+                    <div class="thumbnail" id="thumbnailDoggofriend">
+                        <img src="media/doggofriendMockup.png" alt="">
+                    </div>
+                    <div class="titleHolder">
+                        <a href=""><h3>Doggofriend</h3></a>
+                        <ul class="tags">
+                            <li>#business-development</li>
+                            <li>#UX-design</li>
+                        </ul>
+                    </div>
+                    <p>The next best alternative to working from home when it comes to caring for your dog.</p>
+                </div>
 
-    <div id="scrollToContact"></div>
-    <section class="contactMe" id="contact">
-        <div class="textholder">
-            <h2>Let's work together!</h2>
-            <p>Send me a message through the form below. Or hit me up on social media, the links are right there in the footer!</p>
-        </div>
-        <form action="https://formsubmit.co/c86cbda038a9f2a822d186a1032ceb2e" method="POST">
-            <div class="contactinfo">
-                <input class="inputfield" type="text" name="name" placeholder="Name" required>
-                <input type="email" name="email" placeholder="Email" required>
+                <div class="projectContainer" id="smap">
+                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">
+                        <div class="thumbnail" id="thumbnailSmap">
+                            <img src="media/smap3.PNG" alt="">
+                        </div>
+                    </a>
+                    <div class="titleHolder">
+                        <a href=""><h3>Spotify Map</h3></a>
+                        <ul class="tags">
+                            <li>#development</li>
+                            <li>#UX-design</li>
+                            <li>#UI-design</li>
+                        </ul>
+                    </div>
+                    <p>Designing a more intuitive and fun way to discover music from all over the world.</p>
+                </div>
+
+                <div class="projectContainer" id="ledigajobb">
+                    <div class="thumbnail" id="thumbnailLedigajobb">
+                        <img src="media/ledigajobbHome.png" alt="">
+                    </div>
+                    <div class="titleHolder">
+                        <a href=""><h3>Ledigajobb.se</h3></a>
+                        <ul class="tags">
+                            <li>#UX-design</li>
+                        </ul>
+                    </div>
+                    <p>What if finding a job didn't mean hours of editing your resume and writing cover letters?</p>
+                </div>
+                <div class="projectContainer" id="worldvbo">
+                    <div class="thumbnail" id="thumbnailWorldvbo">
+                        <div id="vboImages">
+                            <img id="vboimg1" src="media/varldensVBO1.png" alt="">
+                            <img id="vboimg2" src="media/varldensVBO2.png" alt="">
+                        </div>
+                    </div>
+                    <div class="titleHolder">
+                        <a href=""><h3>Product home for Västerbottensost</h3></a>
+                        <ul class="tags">
+                            <li>#UX-design</li>
+                            <li>#UI-design</li>
+                        </ul>
+                    </div>
+                    <p>Helping a beloved product with a history of over 150 years find its place in the digital age.</p>
+                </div>
+
+                <div class="projectContainer" id="scanandgo">
+                    <div class="thumbnail" id="thumbnailScanandgo">
+                        <img id="scanandgoLogo" src="media/scanandgoLogo.svg" alt="">
+                        <img id="scanandgoCheckout" src="media/scanandgoCheckout.png" alt="">
+                        <img id="scanandgoStart" src="media/scanandgoStart.png" alt="">
+                    </div>
+                    <div class="titleHolder">
+                        <a href=""><h3>Scan&Go shopping app</h3></a>
+                        <ul class="tags">
+                            <li>#UX-design</li>
+                            <li>#UI-design</li>
+                        </ul>
+                    </div>
+                    <p>A universal solution to self service in grocery shopping.</p>
+                </div>
+
+                <div class="projectContainer" id="umubook">
+                    <div class="thumbnail" id="thumbnailUmubook">
+                        <img id="umuER" src="media/umubookER.png" alt="">
+                        <img id="umuProfile" src="media/umubookProfile.png" alt="">
+                    </div>
+                    <div class="titleHolder">
+                        <a href=""><h3>SNS UMU-Book</h3></a>
+                        <ul class="tags">
+                            <li>#development</li>
+                            <li>#database-design</li>
+                        </ul>
+                    </div>
+                    <p>Exploring an unconventional way to create a social media service using SQL databases.</p>
+                </div>
             </div>
-            <textarea type="text" name="message" id="" cols="30" rows="10" placeholder="Message"></textarea>
-            <div class="buttonholder">
-                <button class="btn_dark" type="submit">Send</button>
+        </section>
+        
+        <!-- <section id="projects">
+            <div id="headerWrapper">
+                <h2>My Work</h2>
             </div>
-        </form>
-    </section>
+            <div id="smap">
+                <div class="projectStructure projectStructure1" class="">
+                    <img src="media/smapMockup.png" alt="">
+                    <div class="projectInfo" id="smapInfo">
+                        <h2>Spotify Map</h2>
+                        <p>Designing a more intuitive and fun way to discover music from all over the world. A group project from a class in development of web applications where multiple APIs are combined to create a new service.</p>
+                        <ul class="tags">
+                            <li>#Development</li>
+                            <li>#UX/UI-Design</li>
+                        </ul>
+                        <a href="">Read more></a>
+                    </div>
+                </div>
+            </div>
+            <div id="doggofriend">
+                <div class="projectStructure projectStructure2">
+                    <div class="projectInfo" id="smapInfo">
+                        <h2>Doggofriend</h2>
+                        <p></p>
+                        <ul class="tags">
+                            <li>#Businessdevelopment</li>
+                            <li>#UX-Design</li>
+                        </ul>
+                        <a href="">Read more ></a>
+                    </div>
+                    <img class="phones" src="media/doggofriendMockup.png" alt="">
+                </div>
+            </div>
+            <div id="smap">
+                <div class="projectStructure projectStructure1" class="">
+                    <img src="media/smapMockup.png" alt="">
+                    <div class="projectInfo" id="smapInfo">
+                        <h2>Spotify Map</h2>
+                        <p>Designing a more intuitive and fun way to discover music from all over the world. A group project from a class in development of web applications where multiple APIs are combined to create a new service.</p>
+                        <ul class="tags">
+                            <li>#Development</li>
+                            <li>#UX/UI-Design</li>
+                        </ul>
+                        <a href="">Read more></a>
+                    </div>
+                </div>
+            </div>
+        </section> -->
+    </main>
+    
     <footer>
-        <div class="left">
-            <a href="https://www.facebook.com/SandlundSamuel"><img class="smIcon" src="media/facebook.svg" alt=""></a>
-            <a href="https://www.linkedin.com/in/samuel-sandlund-37107923b/"><img class="smIcon" src="media/linkedin.svg" alt=""></a>
+        <div class="bio">
+            <div class="bioText">
+                <h1>My expertise is making the user feel like an expert</h1>
+                <p>
+                    The greatest keys to a good user experience are familiarity and predictability. 
+                    If the users of a system expect something to happen when they perform an action, that is exactly what should happen.
+                </p>
+                <p>
+                    There is a problem with the statement above, and it is that all users are different. That is where I come in.
+                </p>
+                <p>
+                    As a user-centered designer and developer, currently in my fifth and last year of the Master of Science program in Interaction Technology and Design at Umeå University, I am equpied with the tools and knowledge to understand the target audience and find a solution that satisfies all users.
+                </p>
+                <p id="call">
+                    Want me on your team?
+                </p>
+                <p>
+                    Send me an <a href="mailto: samuel.j.sandlund@gmail.com">email</a> or connect with me on <a href="https://www.linkedin.com/in/samuel-sandlund/">LinkedIn</a>.
+                </p>
+            </div>
+            <img src="media/portrait.png" alt="">
         </div>
-        <div class="mid">
-            <p><b>Samuel Sandlund | 2022</b></p>
-        </div>
-        <div class="right">
-            <p><a href="#scrollToTop"><b>From the top!</b></a></p>
+        <div id="copyright">
+            <span>© Samuel Sandlund, </span> <span id="year">2024</span>
         </div>
     </footer>
 </body>
+
+
+<script src="scripts.js"></script>
 </html>
