@@ -17,15 +17,15 @@
                 
             </div>
             <ul class="links">
-                <li id="myWork"><a href="">my work</a></li>
-                <li id="bio"><a href="">bio</a></li>
+                <li id="myWork"><a href="#projectGallery">my work</a></li>
+                <li id="bio"><a href="#aboutMe">bio</a></li>
                 <li><a id="contactButton" href="mailto: samuel.j.sandlund@gmail.com"><button class="contactButton">contact</button></a></li>
             </ul>
         </nav>
     </header>
     
     <main>
-        <section class="hero">
+        <section class="hero" #="">
             <div id="title">
                 <h1>Hi, I am Samuel...</h1>
                 <div class="headerTextBox">
@@ -35,14 +35,16 @@
             </div>
         </section>
         
-        <section class="projects">
+        <section class="projects" id="projectGallery">
             <div class="gallery">
                 <div class="projectContainer" id="doggofriend">
-                    <div class="thumbnail" id="thumbnailDoggofriend">
-                        <img src="media/doggofriendMockup.png" alt="">
-                    </div>
+                    <a href="doggofriend.html">
+                        <div class="thumbnail" id="thumbnailDoggofriend">
+                            <img src="media/doggofriendMockup.png" alt="">
+                        </div>
+                    </a>
                     <div class="titleHolder">
-                        <a href=""><h3>Doggofriend</h3></a>
+                        <a href="doggofriend.html"><h3>Doggofriend</h3></a>
                         <ul class="tags">
                             <li>#business-development</li>
                             <li>#UX-design</li>
@@ -52,7 +54,7 @@
                 </div>
 
                 <div class="projectContainer" id="smap">
-                    <a href="https://www.youtube.com/watch?v=xvFZjo5PgG0&ab_channel=Duran">
+                    <a href="">
                         <div class="thumbnail" id="thumbnailSmap">
                             <img src="media/smap3.PNG" alt="">
                         </div>
@@ -129,58 +131,10 @@
                 </div>
             </div>
         </section>
-        
-        <!-- <section id="projects">
-            <div id="headerWrapper">
-                <h2>My Work</h2>
-            </div>
-            <div id="smap">
-                <div class="projectStructure projectStructure1" class="">
-                    <img src="media/smapMockup.png" alt="">
-                    <div class="projectInfo" id="smapInfo">
-                        <h2>Spotify Map</h2>
-                        <p>Designing a more intuitive and fun way to discover music from all over the world. A group project from a class in development of web applications where multiple APIs are combined to create a new service.</p>
-                        <ul class="tags">
-                            <li>#Development</li>
-                            <li>#UX/UI-Design</li>
-                        </ul>
-                        <a href="">Read more></a>
-                    </div>
-                </div>
-            </div>
-            <div id="doggofriend">
-                <div class="projectStructure projectStructure2">
-                    <div class="projectInfo" id="smapInfo">
-                        <h2>Doggofriend</h2>
-                        <p></p>
-                        <ul class="tags">
-                            <li>#Businessdevelopment</li>
-                            <li>#UX-Design</li>
-                        </ul>
-                        <a href="">Read more ></a>
-                    </div>
-                    <img class="phones" src="media/doggofriendMockup.png" alt="">
-                </div>
-            </div>
-            <div id="smap">
-                <div class="projectStructure projectStructure1" class="">
-                    <img src="media/smapMockup.png" alt="">
-                    <div class="projectInfo" id="smapInfo">
-                        <h2>Spotify Map</h2>
-                        <p>Designing a more intuitive and fun way to discover music from all over the world. A group project from a class in development of web applications where multiple APIs are combined to create a new service.</p>
-                        <ul class="tags">
-                            <li>#Development</li>
-                            <li>#UX/UI-Design</li>
-                        </ul>
-                        <a href="">Read more></a>
-                    </div>
-                </div>
-            </div>
-        </section> -->
     </main>
     
     <footer>
-        <div class="bio">
+        <div class="bio" id="aboutMe">
             <div class="bioText">
                 <h1>My expertise is making the user feel like an expert</h1>
                 <p>

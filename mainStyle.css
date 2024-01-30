@@ -63,7 +63,7 @@ header{
     position: fixed;
     top: 0;
     max-width: 100vw;
-    border-bottom: 2px solid black;
+    border-bottom: 1px solid black;
 }
 
 nav{
@@ -227,9 +227,9 @@ section{
     cursor: pointer;
     opacity: 90%;
     border: black;
-    border-width: 2px;
+    border-width: 1px;
     border-style:solid;
-    margin: -2px;
+    margin: -1px;
 }
 
 .gallery a{
@@ -347,85 +347,13 @@ section{
     left: 10%;
 }
 
-/* #projects{
-    display: block;
-}
-
-#projects #headerWrapper{
-    max-width: 100vw;
-    text-align: center;
-    padding-bottom: 5vh;
-}
-
-#projects #headerWrapper h2{
-    font-weight: 1000;
-    font-size: 36px;
-}
-
-.projectStructure{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    margin-left: 9em;
-    margin-right: 9em;
-}
-
-.projectStructure img{
-    width: 100%;
-}
-
-.projectStructure .phones{
-    max-width: 80%;
-}
-
-.projectStructure ul{
-    display: flex;
-    text-decoration: none;
-    padding: 0;
-    list-style: none;
-}
-
-.projectStructure li{
-    margin-right: 1em;
-    font-family: var(--paragraphFont);
-    font-size: 14px;
-    font-weight: 700;
-    color: var(--khaki);
-}
-
-.projectStructure .projectInfo{
-    max-width: 35vw;
-    display: block;
-    margin: auto;
-    padding-bottom: 3em;
-}
-
-.projectStructure1 .projectInfo{
-    margin-right: 12vw;
-}
-
-.projectStructure2 .projectInfo{
-    margin-left: 15vw;
-}
-
-.projectStructure p{
-    line-height: 1.5em;
-}
-
-.projectStructure a{
-    text-decoration: none;
-    font-family: var(--paragraphFont);
-    font-weight: 700;
-    color: var(--midnightBlue);
-}
-
-.projectStructure a:hover{
-    text-decoration: underline;
-    color: var(--steelBlue);
-} */
-
 h2{
     font-family: var(--headerFont);
     font-weight: 700;
+}
+
+img{
+    max-width: 100%;
 }
 
 footer{
@@ -477,6 +405,21 @@ footer .bio .bioText a:hover{
     color: var(--4A);
 }
 
+footer #projectsBio{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+footer #projectsBio .bioText{
+    margin-left: var(--indents);
+    margin-right: var(--indents);
+}
+
+footer #projectsBio #call{
+    font-size: var(--biggerTextSize);
+}
+
 
 footer #copyright{
     padding-bottom: 3em;
@@ -496,6 +439,85 @@ footer #copyright #year{
     color: var(--4A);
 }
 
+.projectIntroduction{
+    padding-top: 10vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.projectIntroduction h1{
+    font-size: var(--evenBiggerTextSize)
+}
+
+.projectIntroduction .projectData ul{
+    list-style: none;
+    padding: 0;
+    font-family: var(--paragraphFont);
+}
+
+.projectIntroduction .projectData li{
+    font-size: var(--biggerTextSize);
+    font-weight: 600;
+}
+
+.projectShowcase{
+    display: block;
+}
+
+.projectShowcase .projectShowcaseRow{
+    margin-top: 100px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2vw;
+}
+
+.projectColumnLeft{
+    margin-left: var(--indents);
+    align-self: center;
+}
+
+.projectColumnRight{
+    margin-right: var(--indents);
+    align-self: center;
+}
+
+/* 
+.projectIntroduction h1{
+    margin-top: 0;
+} */
+
+/* .projectIntroduction .projectDescription{
+    margin-left: var(--indents);
+} */
+
+.projectIntroduction img{
+    max-width: 80%;
+    justify-self: end;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 900px) {
     .projects .gallery{
@@ -505,6 +527,7 @@ footer #copyright #year{
         grid-template-columns: 1fr;
         grid-template-rows: auto;
         grid-auto-flow: row;
+        row-gap: 10vh;
     }
 
     .hero .headerTextBox{
@@ -524,6 +547,47 @@ footer #copyright #year{
 
     footer .bio .bioText{
         margin-right: var(--indents);
+    }
+
+    .projectShowcase .projectShowcaseRow #imgageHolder{
+        justify-content: center;
+        grid-area: image;
+    }
+
+    .projectShowcase .projectShowcaseRow #textHolder{
+        justify-self: center;
+        margin: 0;
+        grid-area: text;
+    }
+
+    .projectShowcase .projectShowcaseRow{
+        margin-top: 100px;
+        display: grid;
+        grid-template-areas: 
+            "image"
+            "text"
+        ;
+        grid-template-columns: 1fr;
+    }
+
+    .projectShowcase .projectShowcaseRow .projectColumnLeft{
+        margin-left: 0;
+    }
+
+    .projectShowcase .projectShowcaseRow .projectColumnRight{
+        margin-right: 0;
+    }
+
+    .projectIntroduction{
+        padding-top: 10vh;
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .projectIntroduction img{
+        margin-top: 3em;
+        max-width: 100%;
+        justify-self: center;
     }
 }
 
