@@ -28,39 +28,38 @@
         <section class="projectIntroduction">
             <div class="projectDescription">
                 <div class="projectDescriptionText">
-                    <h1>Scan&Go</h1>
+                    <h1>Spotify Map</h1>
                     <p>
-                        This project was developed during the course Human-Computer Interaction with Emphasis on Cognition and Design. The task was to create or improve a system where computers and humans work together to perform a task.
-                        Scan&Go aims to improve efficiency and convenience in grocery shopping by moving the traditional self service shopping system to smartphone devices that most users are way more familiar with.
-                        Scan&Go shows the user which stores have the products they are looking for and also acts as a guide to find them in that store, it also allows the user to scan products and pay with their phone.
+                        A mashup (read: "frankensteins monster of multiple Web APIs combined to create a new service") that makes exploring the most trending songs around the world easier and more exciting.
+                        This web-application was developed as the final project in the course Applications Development for Internet.
                     </p>
                 </div>
                 <div class="projectData">
                     <br>
                     <ul>
                         <li>Duration</li>
-                        <p>August 2021 - November 2021 (50%)</p>
+                        <p>April 2022 - June 2022 (50%)</p>
                         <li>Role</li>
-                        <p>UX-designer</p>
+                        <p>UX-designer, Developer</p>
                         <li>Tools</li>
-                        <p>Figma, Coffee</p>
+                        <p>React.js, Figma, Coffee</p>
                     </ul>
                 </div>
             </div>
-            <img class="projectCoverImage" src="media/scanandgoCoverImage.png" alt="">
+            <img class="projectCoverImage" src="media/smap3.png" alt="">
         </section>
 
         <section class="projectShowcase">
             <div class="projectShowcaseRow">
                 <div class="projectColumnLeft" id="imageHolder">
-                    <img src="media/scanandgoWireframe.png" alt="">
+                    <img src="media/smapFullScreen.PNG" alt="">
                 </div>
                 <div class="projectColumnRight" id="textHolder">
                     <h1>The Process</h1>
                     <p>
-                        The design process started with researching the target audience. Since the application needed to appeal to a very wide age group a lot of different perspectives had to be taken into consideration.
-                        Based on user requests wireframes and an interactive lo-fi prototype was created. The prototype was used for end user testing. In the tests participants were given common tasks that are performed while grocery shopping and asked to perform them using the applicaion.
-                        Their emotional response and perceived workload was measured using emocards and the NASA Task Load Index respectively. Due to time constraints only one such iteration was performed before development of a hi-fi prototype started.
+                        During a course focused on the development of web-applications the final project was to create a mashup by combining two or more APIs. One very extensive Web API is provided by Spotify, containing information about all the songs, artists and playlists in their database.
+                        This API was used as backbone for the project and a foundation to create something new. The idea for the project was to design a different way of interacting with the database, allowing users to discover music an a way that does not include search bars and scrolling through menus.
+                        By combining the Spotify API with a world map from the Mapbox API the idea to make an interactive world map became the focus of the project.
                     </p>
                 </div>
             </div>
@@ -69,13 +68,14 @@
                 <div class="projectColumnLeft" id="textHolder">
                     <h1>The Result</h1>
                     <p>
-                        In the resulting Scan&Go application users can create shopping lists, they are then given suggestions of where to go shopping based on their location data and available information about what the local retailers have in store.
-                        Well inside the store a map of the stores layout can be used to navigate to the isles where the products in the active shopping list are located, saving the users time and discouraging unnecessary spending.
-                        The application can also be used to scan QR-codes or use machine learning to recognize products and add them to a virtual shopping cart. The products can then be paid for in the app eliminating the need to stand in line for checkout.
+                        Spotify Map displays a map of the entire world through which a user can click on any country or region to view the most played songs there. 
+                        However if Spotify is not available in the country songs can not be displayed. 
+                        If Spotify is available in the country but does not keep statistics of the most played songs the top songs are gathered from other available APIs and put into a new playlist, provided that the song is available on Spotify.
+                        The use of the application requires a Spotify account and is currently invite only, but there are plans to update the project to meet Spotify's design standards and publicly release it as a plugin. If you want to try out the application for yourself let me know and we can figure something out.
                     </p>
                 </div>
                 <div class="projectColumnRight" id="imageHolder">
-                    <img src="media/scanandgoHifi.png" alt="">
+                    <img src="media/smapMockup.png" alt="">
                 </div>
             </div>
         </section>

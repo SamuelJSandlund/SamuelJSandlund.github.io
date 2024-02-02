@@ -28,39 +28,39 @@
         <section class="projectIntroduction">
             <div class="projectDescription">
                 <div class="projectDescriptionText">
-                    <h1>Scan&Go</h1>
+                    <h1>UMU-Book</h1>
                     <p>
-                        This project was developed during the course Human-Computer Interaction with Emphasis on Cognition and Design. The task was to create or improve a system where computers and humans work together to perform a task.
-                        Scan&Go aims to improve efficiency and convenience in grocery shopping by moving the traditional self service shopping system to smartphone devices that most users are way more familiar with.
-                        Scan&Go shows the user which stores have the products they are looking for and also acts as a guide to find them in that store, it also allows the user to scan products and pay with their phone.
+                        During the course Databases and Web Based Systems we were tasked with building an application and data access layer on top of a relational database using SQL. 
+                        Me and some class mates decided to try building a social network/online forum.
                     </p>
                 </div>
                 <div class="projectData">
                     <br>
                     <ul>
                         <li>Duration</li>
-                        <p>August 2021 - November 2021 (50%)</p>
+                        <p>November 2021 - January 2022 (50%)</p>
                         <li>Role</li>
-                        <p>UX-designer</p>
+                        <p>Developer</p>
                         <li>Tools</li>
-                        <p>Figma, Coffee</p>
+                        <p>C#, .NET, SQL, SQL Server, Coffee</p>
                     </ul>
                 </div>
             </div>
-            <img class="projectCoverImage" src="media/scanandgoCoverImage.png" alt="">
+            <img class="projectCoverImage" src="media/umubookfeed.png" alt="">
         </section>
 
         <section class="projectShowcase">
             <div class="projectShowcaseRow">
                 <div class="projectColumnLeft" id="imageHolder">
-                    <img src="media/scanandgoWireframe.png" alt="">
+                    <img src="media/umubookER.png" alt="">
                 </div>
                 <div class="projectColumnRight" id="textHolder">
-                    <h1>The Process</h1>
+                    <h1>The Task</h1>
                     <p>
-                        The design process started with researching the target audience. Since the application needed to appeal to a very wide age group a lot of different perspectives had to be taken into consideration.
-                        Based on user requests wireframes and an interactive lo-fi prototype was created. The prototype was used for end user testing. In the tests participants were given common tasks that are performed while grocery shopping and asked to perform them using the applicaion.
-                        Their emotional response and perceived workload was measured using emocards and the NASA Task Load Index respectively. Due to time constraints only one such iteration was performed before development of a hi-fi prototype started.
+                        Conventionally a graph based database might be prefered for a system such as a social network. However as this course required the use of SQL and relational databases we decided to try building a social networking service in this rather unconventional way.
+                        The structure of the social network was inspired by Twitter (X) and simple online forums, consisting of a dynamic between users and posts, and how they interact with eachother.
+                        The project gave me a lot of experience crafting SQL queries and taught me some valuable lessons in how to (and probably more how not to) construct efficient relational databases.
+                        Different ways to encrypt and store users passwords also had to be explored.
                     </p>
                 </div>
             </div>
@@ -69,13 +69,14 @@
                 <div class="projectColumnLeft" id="textHolder">
                     <h1>The Result</h1>
                     <p>
-                        In the resulting Scan&Go application users can create shopping lists, they are then given suggestions of where to go shopping based on their location data and available information about what the local retailers have in store.
-                        Well inside the store a map of the stores layout can be used to navigate to the isles where the products in the active shopping list are located, saving the users time and discouraging unnecessary spending.
-                        The application can also be used to scan QR-codes or use machine learning to recognize products and add them to a virtual shopping cart. The products can then be paid for in the app eliminating the need to stand in line for checkout.
+                        Although not very highly efficient from a performance standpoint the resulting product is a working social netowrk service, allowing users to sign up and create a profile.
+                        They can then post content in the form of text and/or images. Signed in users can search for and follow other accounts, posts from these accounts will then show up in their feed.
+                        Users can like, share and reply to on other users posts. All replies to a post will be shown in a sub-feed under the original post. 
+                        A shared post will also show up in the feed of all users following the sharer with a notice that it is being shared by them.
                     </p>
                 </div>
                 <div class="projectColumnRight" id="imageHolder">
-                    <img src="media/scanandgoHifi.png" alt="">
+                    <img src="media/umubookProfile.png" alt="">
                 </div>
             </div>
         </section>

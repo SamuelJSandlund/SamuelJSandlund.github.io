@@ -461,6 +461,10 @@ footer #copyright #year{
     font-weight: 600;
 }
 
+.projectIntroduction img{
+    align-self: center;
+}
+
 .projectShowcase{
     display: block;
 }
@@ -557,6 +561,7 @@ footer #copyright #year{
     .projectShowcase .projectShowcaseRow #textHolder{
         justify-self: center;
         margin: 0;
+        margin-bottom: 50px;
         grid-area: text;
     }
 
@@ -564,8 +569,8 @@ footer #copyright #year{
         margin-top: 100px;
         display: grid;
         grid-template-areas: 
-            "image"
             "text"
+            "image"
         ;
         grid-template-columns: 1fr;
     }
